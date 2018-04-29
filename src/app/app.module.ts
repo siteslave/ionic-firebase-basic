@@ -8,14 +8,15 @@ import { AngularFireDatabaseModule, AngularFireDatabaseProvider } from 'angularf
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { AddPageModule } from '../pages/add/add.module';
 
-var firebaseConfig = {
-  apiKey: "xxxxxxxx",
-  authDomain: "xxxxxx.firebaseapp.com",
-  databaseURL: "https://xxxx.firebaseio.com",
-  projectId: "xxxxx",
-  storageBucket: "xxxxx.appspot.com",
-  messagingSenderId: "xxxxxxxxxx"
+const firebaseConfig = {
+  apiKey: "xxxxxxxxx",
+  authDomain: "xxxxxxx.firebaseapp.com",
+  databaseURL: "https://xxxxxxx.firebaseio.com",
+  projectId: "xxxxxxx",
+  storageBucket: "xxxxxxx.appspot.com",
+  messagingSenderId: "xxxxxxxxx"
 };
 
 @NgModule({
@@ -25,8 +26,9 @@ var firebaseConfig = {
   ],
   imports: [
     BrowserModule,
-    AngularFireModule.initializeApp(firebaseConfig, 'xxxxxx'),
+    AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
+    AddPageModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],

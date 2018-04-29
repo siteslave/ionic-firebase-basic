@@ -1,0 +1,32 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>add</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-list>
+
+  <ion-item>
+    <ion-label fixed>Fullname</ion-label>
+    <ion-input [(ngModel)]="name" type="text" value=""></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label fixed>Email</ion-label>
+    <ion-input [(ngModel)]="email" type="email"></ion-input>
+  </ion-item>
+
+</ion-list>
+<div padding>
+  <button ion-button color="primary" [disabled]="!name || !email" (click)="save()">
+    Save
+  </button>
+</div>
+
+</ion-content>
+
