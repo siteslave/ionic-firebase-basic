@@ -25,7 +25,7 @@ var firebaseConfig = {
   ],
   imports: [
     BrowserModule,
-    AngularFireModule.initializeApp(firebaseConfig, 'aed-heroes'),
+    AngularFireModule.initializeApp(firebaseConfig, 'xxxxxx'),
     AngularFireDatabaseModule,
     IonicModule.forRoot(MyApp)
   ],
